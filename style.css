@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.simulation-container object {
+    position: relative;
+    width: 90%;
+}
+
+.col{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+#stopwatch-button, #power-btn, #checker{
+    cursor: pointer;
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 95% !important;
+        margin-top: 1%;
+    }
+}
+
+.fcol{
+    width: 39%;
+}
+
+.scol{
+    width: 61%;
+    padding: 0% 2% 0% 2%;
+}
+
+form{
+    height: 50%;
+}
+
+.table{
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    margin-bottom: 0px !important;
+    /* vertical-align: middle; */
+}
+
+table{
+    width: 50%;
+    text-align: center;
+    margin: 0 0.5%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #212529;
+    color: #FFF;
+    /* height: 20px; */
+}
+
+.tablehead, .obs{
+    /* background-color: #007bff; */
+    color: #fff;
+}
+
+.tablehead h4, .tablehead h5{
+    margin-bottom: 0px;
+}
+
+.table-input{
+    text-align: center;
+    border: 0px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.table-input{
+    width: 50%;
+}
+
+.table-input{
+    width: 100%;
+}
+
+.obs{
+    background-color: #007bff;
+    text-align: center;
+    /* padding: 1%; */
+    margin: 0 0.5%;
+}
+
+th, tr, td, .obs{
+    border: 2px solid #dee2e6 ;
+}
+
+.table table td, .table table th{
+    padding: 0;
+    vertical-align: middle;
+}
+
+tr{
+    height: 10%;
+    font-size: 1vw;
+}
+
+/* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    width: 80%; /* Adjust modal width */
+    max-width: 600px; /* Max width for larger screens */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    animation: fadeIn 0.3s ease; /* Smooth fade-in animation */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 767px) {
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bt {
+        order: -1;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+
+/* Add or update table styles */
+#magneticFieldTable, #hallEffectTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+}
+
+#magneticFieldTable th, #magneticFieldTable td,
+#hallEffectTable th, #hallEffectTable td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Fix Sr No column width */
+#magneticFieldTable th:first-child,
+#magneticFieldTable td:first-child,
+#hallEffectTable th:first-child,
+#hallEffectTable td:first-child {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+}
+
+/* Current column width */
+#magneticFieldTable th:nth-child(2),
+#magneticFieldTable td:nth-child(2),
+#hallEffectTable th:nth-child(2),
+#hallEffectTable td:nth-child(2) {
+    width: 100px;
+}
+
+/* Other columns flexible width */
+#magneticFieldTable th:nth-child(3),
+#magneticFieldTable td:nth-child(3) {
+    width: auto;
+}
+
+/* Hall Effect table specific column widths */
+#hallEffectTable th:nth-child(3),
+#hallEffectTable td:nth-child(3) {
+    width: 120px;
+}
+
+#hallEffectTable th:nth-child(4),
+#hallEffectTable td:nth-child(4),
+#hallEffectTable th:nth-child(5),
+#hallEffectTable td:nth-child(5) {
+    width: auto;
+}
+
+/* Table header styling */
+#magneticFieldTable th,
+#hallEffectTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Table input styling */
+.table-input {
+    font-family: monospace;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#magneticFieldTable th,
+#hallEffectTable th {
+    background-color: #ffffff;  /* White background */
+    color: #000000;  /* Black text */
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
