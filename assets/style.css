@@ -218,3 +218,88 @@ tr{
     border: 1px solid #ddd;
     padding: 8px;
 }
+
+
+.pulse {
+    fill: white;
+    fill-opacity: 0;
+    /* transform-origin: -1297px 190px; */
+    animation-duration: 3s;
+    animation-name: none;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1;
+    /* stroke: yellow; */
+}
+  
+@keyframes pulse {
+    0% {
+        stroke-width: 20px;
+        stroke-opacity: 1;
+        transform: scale(0.3);
+    }
+    100% {
+        stroke-width: 0;
+        stroke-opacity: 0.5;
+        transform: scale(2);
+    }
+}
+
+.one{
+    transform-origin:-1200px 180px;
+}
+
+.two{
+    transform-origin: -1250px -50px;
+}
+
+.three{
+    transform-origin: -1145px 180px;
+}
+
+.four{
+    transform-origin: -945px -50px;
+}
+
+.five{
+    transform-origin:-930px 95px;
+}
+
+.six{
+    transform-origin:-1145px 90px;
+}
+.seven{
+    transform-origin: -1042px 20px;
+}
+.eight{
+    transform-origin: -823px 95px;
+}
+.nine{
+    transform-origin:-1010px 20px;
+}
+.ten{
+    transform-origin: -887px 225px;
+}
+.eleven{
+    transform-origin:-945px 18px;
+}
+.twelve{
+    transform-origin:-825px 225px;
+}
+.thirteen{
+    transform-origin: -1095px 20px;
+}
+
+
+#wire1, #wire2, #wire3, #wire4,
+#wire5, #wire6, #wire7, #wire8{
+    display: none;
+}
+
+.replacement{
+    transform: matrix(1.35, 0, 0, 1.35, -32.5, -63)
+}
+
+.hidden{
+    display: none;
+}
